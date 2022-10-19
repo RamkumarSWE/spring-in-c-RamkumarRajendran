@@ -1,13 +1,7 @@
-/*=============================================================================
- =======                            INCLUDES                            =======
- =============================================================================*/
+
 #include "stats.h"
 #include <stdio.h>
 #include <math.h>
-
-/*=============================================================================
- =======                            VARIABLES                           =======
- =============================================================================*/
 
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
@@ -53,17 +47,7 @@ else
 
 int emailAlertCallCount = 0;
 int ledAlertCallCount   = 0;
-/*
- *******************************************************************************
- * Functions
- *******************************************************************************
-*/
-/*----------------------------------------------------------------------------*/
- * FUNCTION:   check_and_alert()
- * \brief      calls the emailAlerter and ledAlerter function.
- * \param      maxThreshold, alerters[], computedStats
- * \return     void
-/*--------------------------------------------------------------------------*/
+
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats) 
 {
     if (computedStats.average >= maxThreshold) 
@@ -73,5 +57,5 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
     }
 }
 
-/* EOF */
+
 
