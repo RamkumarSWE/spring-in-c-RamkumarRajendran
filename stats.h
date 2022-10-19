@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include "math.h"
+
 struct Stats {
   float average;
   float min;
