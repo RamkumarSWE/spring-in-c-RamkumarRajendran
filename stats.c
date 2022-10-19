@@ -17,7 +17,7 @@ else
     float min = numberset[num];
     float max = numberset[num];
     float sum = numberset[num];
-    i++;
+    num++;
         
     while((num>=1) && (num<setlength))
     {   
