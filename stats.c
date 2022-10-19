@@ -1,8 +1,5 @@
 
 #include "stats.h"
-#include <stdio.h>
-#include <math.h>
-
 struct Stats compute_statistics(const float* numberset, int setlength) 
 {
     struct Stats s;
@@ -52,8 +49,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
 {
     if (computedStats.average >= maxThreshold) 
     {
-        alerters[0]();
-        alerters[1]();
+       (void) (alerters[0]());
+       (void) (alerters[1]());
     }
 }
 
