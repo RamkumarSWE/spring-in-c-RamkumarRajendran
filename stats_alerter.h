@@ -1,6 +1,6 @@
 
-void emailAlerter();
-void ledAlerter();
+extern void emailAlerter();
+extern void ledAlerter();
 
 
 
